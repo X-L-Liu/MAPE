@@ -14,16 +14,7 @@
 > Mini-ImageNet demonstrate that MAPE showcases high generalization and robustness. The MAPE-based defense system 
 > constructed with SAU-Net and the target model can extract and eliminate adversarial perturbations from various 
 > adversarial examples, effectively defending against unseen adversarial attacks from different substitute models.*
-> 
-
-### Contents
-1) [Installation](#Installation) 
-2) [Restoring Files Structure](#Restoring Files Structure) 
-3) [Generating Adversarial Examples](#Generating Adversarial Examples) 
-4) [Training SAPE](#Training SAPE)
-5) [Training MAPE](#Training MAPE)
-6) [Evaluation](#Evaluation)
-
+>
 
 ## Installation
 
