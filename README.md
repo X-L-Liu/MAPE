@@ -2,18 +2,7 @@
 
 [//]: # ([Paper]&#40;&#41; )
 
-> **Abstract:** *Neural networks are susceptible to carefully crafted adversarial examples, leading to high-confidence 
-> incorrect judgments. Due to the stealthiness and difficulty in detection, transfer-based black-box attacks have become
-> a focus of adversarial defense. Previous methods for high-order denoising were limited to specific target models, 
-> exhibiting poor generalization when countering adversarial attacks from unseen substitute models. Herein, we propose 
-> a deep learning training framework called multi-source adversarial perturbations elimination (MAPE) to defend against 
-> transfer-based attacks. MAPE consists of multiple parallel single-source adversarial perturbation elimination 
-> mechanisms (SAPE), creating adversarial examples for training in a randomized and multimodal manner. Using a 
-> meticulously designed self-attention U-Net (SAU-Net) as the extractor of perturbations elimination, MAPE enhances 
-> the generalization of SAU-Net through diverse updates of label loss differences. Evaluations on CIFAR and 
-> Mini-ImageNet demonstrate that MAPE showcases high generalization and robustness. The MAPE-based defense system 
-> constructed with SAU-Net and the target model can extract and eliminate adversarial perturbations from various 
-> adversarial examples, effectively defending against unseen adversarial attacks from different substitute models.*
+> **Abstract:** *Neural networks are vulnerable to meticulously crafted adversarial examples, resulting in high-confidence misclassifications in image classification tasks. Due to their stealthiness and difficulty in detection, transfer-based black-box attacks have become a significant focus of defense. In this work, we propose a deep learning training framework called multi-source adversarial perturbations elimination (MAPE) to defend against diverse transfer-based attacks. MAPE consists of the single-source adversarial perturbation elimination (SAPE) training mechanism and the pre-trained models probabilistic scheduling algorithm (PPSA). SAPE employs a thoughtfully designed channel-attention U-Net as an extractor and generates adversarial examples using a pre-trained model (e.g., ResNet). These adversarial examples are used to train the extractor, enhancing its ability to extract and eliminate adversarial perturbations. PPSA extends the number of pre-trained models from one to several, introducing model difference probability and negative momentum probability based on their output scores and scheduling records, respectively. By combining these two probabilities, PPSA can dynamically schedule the pre-trained models utilized in SAPE to maximize the differences between them across adjacent training cycles, thereby enhancing the extractor's generalization in addressing adversarial perturbations. The MAPE-based defense system effectively eliminates adversarial perturbations from various adversarial examples, providing robust defense against unseen adversarial attacks from different substitute models. In a black-box attack scenario, utilizing ResNet-34 as the target model, our approach achieves average defense rates exceeding 95% on the CIFAR-10 dataset and over 70% on the Mini-ImageNet dataset, demonstrating state-of-the-art performance.*
 >
 
 ## Installation
