@@ -1,7 +1,7 @@
 import argparse
 import time
 import torch.optim as optim
-from torchvision import datasets
+from torchvision import datasets 
 from torch.utils.data import DataLoader
 from utils.utils import *
 
